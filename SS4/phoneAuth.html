@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHONE FORM</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="center">
+      <h1>WELCOME</h1>
+      <div id="form">
+        <!-- <form action="post"> -->
+        <div class="txt_field">
+          <input id="phoneNumber" type="text" required />
+          <span></span>
+          <label>Phone Number</label>
+        </div>
+
+        <div class="txt_field">
+          <input id="verificationCode" type="text" required />
+          <span></span>
+          <label>Verification Code</label>
+        </div>
+
+        <div id="recaptcha-container"></div>
+
+        <input id="sendCode-btn" type="submit" value="Send Code" />
+        <input id="verify-btn" type="submit" value="Verify Code" />
+
+        <!-- </form> -->
+      </div>
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+    <script defer src="./js/firebase.js" type="module"></script>
+
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="./js/alert.js" type="module"></script>
+    <script src="./js/phone.js" type="module"></script>
+  </body>
+</html>
