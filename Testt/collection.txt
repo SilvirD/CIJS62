@@ -1,0 +1,8 @@
+Bài toán 2 cần có 1 collection: Employee
+
+Document cần có các thông tin sau
+- id
+- first name
+- last name
+- task list
+- employee list
